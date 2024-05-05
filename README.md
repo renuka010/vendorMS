@@ -6,6 +6,7 @@ This is a set of REST APIs made using Django and Django Rest Framework for vendo
 ## Tech Stack
 - Django - Backend
 - Django Rest Framework - for REST API creation
+- Sqlite Database - for storing models
 
 ## Features
 - Has three data models:
@@ -104,7 +105,7 @@ To run automated tests use the following code in command line.
 python manage.py test
 ```
 
-You should something as below in your command line after that.
+You should see something as below in your command line after that.
 
 ```
 Found 17 test(s).
@@ -127,7 +128,7 @@ python manage.py runserver
 ## API end points
 Use the below API code to access the data. I recommend using Postman. Copy and paste the following curl command in Postman to test the api.
 
-To get authentication token, use the below command. Replace the username and password with the details of superuser created.
+To get authentication token, use the below command. `Replace the username and password` with the details of superuser created.
 
 ### Get /api/Token/
 
@@ -140,7 +141,7 @@ curl --location 'http://127.0.0.1:8000/api/token/' \
 }'
 ```
 
-For the remaining Api calls, change the token to your token and proceed.
+For the remaining Api calls, `change the token` to your token and proceed.
 
 ### Get api/vendors -> List all vendors
 
