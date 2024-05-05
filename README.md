@@ -27,6 +27,47 @@ This is a set of REST APIs made using Django and Django Rest Framework for vendo
 - Each API endpoint is documented.
 - Test suite is added for all API points in tests.py.
 
+## Important Files
+<pre>
+vendorMS 
+|___vendorMS
+|   |___ settings.py 
+|   |___ urls.py
+|   |___ scheduler.py
+|___webapp
+|   |___ models.py
+|   |___ serializers.py
+|   |___ urls.py
+|   |___ signals.py
+|   |___ tests.py
+|   |___ views
+|        |___ vendor_views.py
+|        |___ purchase_order_views.py
+|        |___ performance_views.py
+|__db.sqlite3
+
+
+`db.sqlite3` Database used in backend.
+</pre>
+#### In vendorMS directory
+
+- `Settings.py` Has settings and configuration for this project.
+- `urls.py` Contains the url configuration for the project.
+- `scheduler.py` Contains a scheduler for updating vendor metrics periodically to the historical performance model.
+
+#### In webapp directory
+
+- `models.py` Contains the database models we used in this project.
+- `serializers.py` Contains the serializers for all models which can be used to serialize and deserialize json data.
+- `urls.py` Contains the url configuration for the Django app.
+- `signals.py` Contains Django signals which will be triggered automatically during database operations.
+- `tests.py` This is a test suit, which contains test cases for testing all API end points.
+
+#### In views directory
+
+- `vendor_views.py` This has views related to accessing Vendor model.
+- `purchase_order_views.py` This has views related to accessing  PurchaseOrder model.
+- `performance_views.py` This has views related to accessing Performance model.
 
 ## Installation
 1. Clone the repository:
