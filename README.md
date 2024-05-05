@@ -75,14 +75,14 @@ vendorMS
     ```
     git clone https://github.com/renuka010/vendorMS.git
     ```
-2. Change into the project directory:
-    ```
-    cd vendorMS
-    ```
-3. Create and Activate the virtual environment:
+2. Activate the virtual environment:
     ```
     python3 -m venv venv  # Create
     venv\Scripts\activate    # Activate
+    ```
+3. Change into the project directory:
+    ```
+    cd vendorMS
     ```
 4. Install the dependencies:
     ```
