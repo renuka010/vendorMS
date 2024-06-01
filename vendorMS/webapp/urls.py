@@ -12,6 +12,6 @@ router.register(r'purchase_orders', PurchaseOrderViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('token/', obtain_auth_token, name='api_token_auth'),
-    path('vendors/<int:vendor_id>/performance',
+    path('vendors/<int:vendor_id>/performances',
          vendor_performance, name='vendor_performance'),
 ]

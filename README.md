@@ -273,10 +273,18 @@ curl --location --request DELETE 'http://localhost:8000/api/purchase_orders/10/'
 --header 'Authorization: Token 794f692a64f63a949d082289414f3cc5e5061b74'
 ```
 
-### GET /api/vendors/{vendor_id}/performance: -> Retrieve a vendor's historical performance metrics
+### GET /api/vendors/{vendor_id}/performance: -> Retrieve a vendor's performance metrics
 
 ```
 curl --location 'http://localhost:8000/api/vendors/1/performance' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Token 794f692a64f63a949d082289414f3cc5e5061b74'
+```
+
+### GET /api/vendors/{vendor_id}/performances: -> Retrieve a vendor's historical performance metrics
+
+```
+curl --location 'http://localhost:8000/api/vendors/1/performances' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Token 794f692a64f63a949d082289414f3cc5e5061b74'
 ```
